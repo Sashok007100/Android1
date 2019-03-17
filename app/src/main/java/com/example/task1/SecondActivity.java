@@ -1,18 +1,14 @@
 package com.example.task1;
 
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.KeyEvent;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class SecondActivity extends AppCompatActivity {
 
@@ -35,6 +31,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     class CustomAdapter extends BaseAdapter {
+
         @Override
         public int getCount() {
             return 1000000;

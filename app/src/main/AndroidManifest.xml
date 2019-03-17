@@ -10,7 +10,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".SecondActivity"></activity>
-        <activity android:name=".MainActivity">
+        // android:configChanges="orientation|screenSize" -- запрещает пересоздание Activity при смене ориентации и размера экрана
+        <activity android:name=".MainActivity" android:configChanges="orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

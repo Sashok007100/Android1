@@ -6,7 +6,6 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    /** Called when the activity is first created. */
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -15,8 +14,8 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 try {
                     sleep(2000);
-                    Intent i = new Intent(MainActivity.this, SecondActivity.class);
-                    startActivity(i);
+                    Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                    startActivity(intent);
                     finish();
                 }
                 catch (Exception e) {
